@@ -2,6 +2,8 @@ import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import Currency from "./components/currencies";
+
 //Code to import Budget.js
 import Budget from './components/Budget';
 
@@ -40,6 +42,9 @@ const App = () => {
                                  </div>
                                  }        
                        
+                       { <div className="col-sm">
+                      <Currency />
+                 </div>} 
                         {/* Add ExpenseList component here under */
                    <div className='col-sm'>
                    <ExpenseList />
